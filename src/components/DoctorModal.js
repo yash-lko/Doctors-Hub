@@ -21,19 +21,19 @@ const DoctorModal = ({ show, handleClose, doctor }) => {
 
         <Modal.Body className="doctor-modal-body">
           <p className="doctor-specialty mb-3">
-            <strong className="text-danger">Specialty:</strong> {doctor?.specialty}
+            <strong className="text-dangers">Specialty:</strong> {doctor?.specialty}
           </p>
           <p className="doctor-location mb-3">
-            <strong className="text-danger">Location:</strong> {doctor?.location}
+            <strong className="text-dangers">Location:</strong> {doctor?.location}
           </p>
           <p className="doctor-rating mb-3">
-            <strong className="text-danger">Rating:</strong> {doctor?.rating} ★
+            <strong className="text-dangers">Rating:</strong> {doctor?.rating} ★
           </p>
           <p className="doctor-phone mb-3">
-            <strong className="text-danger">Phone:</strong> {doctor?.phone}
+            <strong className="text-dangers">Phone:</strong> {doctor?.phone}
           </p>
           <p className="doctor-email mb-3">
-            <strong className="text-danger">Email:</strong> {doctor?.email}
+            <strong className="text-dangers">Email:</strong> {doctor?.email}
           </p>
         </Modal.Body>
       </div>

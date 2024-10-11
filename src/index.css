@@ -34,11 +34,11 @@ body {
 }
 
 .add-doctor-btn {
-  background-color: #17a2b8;
-  border: none;
+  background-color: #17a2b8 !important;
+  border: none !important;
   border-radius: 5px;
   padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease !important;
 }
 
 .add-doctor-btn:hover {
@@ -73,6 +73,9 @@ body {
 .doctor-email {
   font-size: 1rem;
 }
+.doctor-modal-body .text-dangers{
+  color:#E87D67 !important;
+}
 
 /* Doctor Card */
 .doctor-card {
@@ -95,7 +98,7 @@ body {
 }
 
 .doctor-card-title {
-  color: #17a2b8;
+  color: #17a2b8 !important;
   font-size: 1.4rem;
   margin-bottom: 15px;
 }
