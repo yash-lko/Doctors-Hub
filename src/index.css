@@ -1,13 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Nunito", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e5e5 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Header  */
+
+.header-container {
+  background-color: white;
+  padding: 0.5rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 3rem;
+  color: #17a2b8;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  color: #17a2b8;
+}
+
+.add-doctor-btn {
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-doctor-btn:hover {
+  background-color: #138496;
+}
+
+
+/*Doctor Modal */
+.doctor-modal-header {
+  background-color: #f7f7f7;
+  border-bottom: none;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+}
+
+.doctor-modal-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(23, 162, 184);
+}
+
+.doctor-modal-body {
+  background-color: #fff;
+  color: #343a40;
+  padding: 20px;
+}
+
+.doctor-specialty,
+.doctor-location,
+.doctor-rating,
+.doctor-phone,
+.doctor-email {
+  font-size: 1rem;
+}
+
+/* Doctor Card */
+.doctor-card {
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden;
+  height: 100%;
+}
+
+.doctor-card.hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card-body {
+  padding: 16px;
+  background-color: #f8f9fa;
+}
+
+.doctor-card-title {
+  color: #17a2b8;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.doctor-card-text {
+  color: #343a40;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.doctor-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #E87D67;
+}
+
+
+
+
+
+
+
+/* Add Doctor Modal   */
+
+.modal-header {
+  background-color: rgb(247, 247, 247);
+  border-bottom: none;
+}
+
+.modal-header .modal-title {
+  color: rgb(23, 162, 184);
+}
+
+
+.add-doctor-button {
+  background-color: #E87D67 !important;
+  border: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.add-doctor-button:hover {
+  background-color: rgb(23, 162, 184);
+}
+
+
+
+/*Searchbar */
+.search-bar-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.search-icon {
+  top: 50%;
+  left: 10px !important;
+  transform: translateY(-50%) !important;
+  color: #E87D67;
+}
+
+.search-input {
+  padding-left: 40px !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*Filter */
+
+.filter-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.filter-icon {
+  top: 50%;
+  left: 10px !important;
+  transform: translateY(-50%);
+  color: #E87D67;
+}
+
+.filter-select {
+  padding-left: 40px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 90%;
+  max-width: 300px;
+  z-index: 9999;
+}
+
+.custom-spinner {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.25em;
+}
+
+.doctor-collection-container .col-md-3 {
+  padding: 0 10px;
+}
+
+
+
+/*Media Queries */
+
+@media (max-width: 768px) {
+  .modal-body p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagination Styles */
+.custom-pagination .custom-pagination-item,
+.custom-pagination-prev,
+.custom-pagination-next {
+  color: #E87D67;
+
+  border-color: #E87D67;
+
+}
+
+
+.custom-pagination .custom-pagination-item-active,
+.custom-pagination .page-item.active .page-link {
+  background-color: rgb(23, 162, 184) !important;
+
+  color: #fff !important;
+
+  border-color: rgb(23, 162, 184) !important;
+
+  z-index: 3;
+}
+
+
+.custom-pagination .custom-pagination-item:hover,
+.custom-pagination-prev:hover,
+.custom-pagination-next:hover {
+
+  color: #fff;
+
+  border-color: #17a2b8;
+
+}
+
+
+.custom-pagination-prev:disabled,
+.custom-pagination-next:disabled {
+  color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
 }
