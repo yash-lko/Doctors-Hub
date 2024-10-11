@@ -32,6 +32,17 @@ A responsive web application for managing doctors, filtering by specialty and lo
 
 ### Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/doctor-management-app.git
+How to Run the Project
+Clone the repository:
+git clone https://github.com/your-username/doctor-management-app.git
+
+Navigate to the project directory:
+cd doctor-management-app
+
+Install dependencies using npm:
+npm install
+
+Start the application using npm:
+npm start
+
+The app will automatically open at http://localhost:3000 in your default web browser.
