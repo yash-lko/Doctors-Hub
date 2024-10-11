@@ -1,4 +1,4 @@
-# Doctor Management Application
+# Doctor's Hub Application Application
 
 A responsive web application for managing doctors, filtering by specialty and location, and adding new doctors using modals. The app includes search functionality and intuitive UI interactions for better user experience.
 
