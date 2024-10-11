@@ -1,70 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/user-attachments/assets/3a3039a1-efe2-4c01-8c39-b71b616a1101)
 
-## Available Scripts
 
-In the project directory, you can run:
+# Doctor's Hub Application
 
-### `npm start`
+A responsive web application for managing doctors, filtering by specialty and location, and adding new doctors using modals. The app includes search functionality and intuitive UI interactions for a better user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Approach
 
-### `npm test`
+### 1. Components & Design:
+- **Header Component**:
+  - Contains a branding icon, application name, and a button to add new doctors.
+  - The button opens a modal for adding a doctor.
+  
+- **SearchBar Component**:
+  - Provides a search input field to filter doctors by name.
+  - The input includes a search icon for better UX.
+  
+- **Filters Component**:
+  - Allows users to filter doctors based on their specialties and locations, dynamically populated from the doctor data.
+  
+- **DoctorCard Component**:
+  - Displays detailed information about a doctor, such as name, specialty, location, and rating.
+  - Each card has a hover effect to provide a dynamic and modern feel.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project leverages **React Bootstrap** for a responsive layout and consistent styling across components.
 
-### `npm run build`
+### 2. State Management:
+- **useState** is used for managing local component state, such as showing/hiding the add doctor modal, loading states, and selected filter options.
+  
+- **useContext (DoctorContext)**: 
+  - The doctor data is managed globally using React's Context API, allowing easy access to the doctors' list throughout the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Asynchronous Logic:
+- For loading filter options (specialty and location), a `useEffect` with a loading simulation is introduced. This demonstrates handling asynchronous data fetching in a real-world scenario.
+  
+- Doctors are dynamically filtered and displayed based on the selected filters (specialty and location).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Styling:
+- The application uses a combination of custom CSS and Bootstrap classes.
+  
+- Each component has unique class names, and common elements like buttons, inputs, and cards are styled for a consistent UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## How to Run the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- **Node.js**: Make sure you have Node.js installed (version 14+ recommended).
+- **npm** or **yarn**: Ensure you have either npm or yarn installed to manage packages.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
+1. **Clone the repository**:  
+   `git clone https://github.com/your-username/doctor-management-app.git`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Navigate to the project directory**:  
+   `cd doctor-management-app`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies using npm**:  
+   `npm install`
 
-## Learn More
+4. **Start the application using npm**:  
+   `npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will automatically open at [http://localhost:3000](http://localhost:3000) in your default web browser.
