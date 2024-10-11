@@ -80,7 +80,7 @@ const AddDoctorModal = ({ show, handleClose }) => {
     doctors.push(doctor);
     localStorage.setItem('doctors', JSON.stringify(doctors));
 
-    toast.success("Doc. Added in LocStorage!", {
+    toast.success("Doctor added in Local Storage!", {
       toastId: "add-doctor-toast",
       position: "bottom-right",
       autoClose: 3000,
