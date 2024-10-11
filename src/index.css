@@ -189,13 +189,18 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
 .custom-toast {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 90%;
-  max-width: 300px;
-  z-index: 9999;
+  font-size: 14px; 
+  padding: 10px 15px; 
+  border-radius: 8px; 
+}
+
+@media (max-width: 576px) {
+  .custom-toast {
+    font-size: 12px;
+    padding: 8px 12px; 
+  }
 }
 
 .custom-spinner {
