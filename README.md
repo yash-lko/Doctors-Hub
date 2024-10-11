@@ -1,5 +1,6 @@
 
-![image](https://github.com/user-attachments/assets/3a3039a1-efe2-4c01-8c39-b71b616a1101)
+![image](https://github.com/user-attachments/assets/7866da78-b53b-4ed1-926b-c87d3d31b712)
+
 
 
 # Doctor's Hub Application
