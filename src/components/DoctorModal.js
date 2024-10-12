@@ -14,7 +14,7 @@ const DoctorModal = ({ show, handleClose, doctor }) => {
 
         <Modal.Header closeButton className="doctor-modal-header">
           <Modal.Title className="doctor-modal-title text-center">
-            <i className="bi bi-person-md me-2"></i> 
+            <i className="bi bi-person-md"></i> 
             {doctor?.name}
           </Modal.Title>
         </Modal.Header>
