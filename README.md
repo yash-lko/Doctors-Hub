@@ -51,7 +51,7 @@ The project leverages **React Bootstrap** for a responsive layout and consistent
 
 ### Prerequisites
 - **Node.js**: Make sure you have Node.js installed (version 14+ recommended).
-- **npm** or **yarn**: Ensure you have either npm or yarn installed to manage packages.
+- **npm**: Ensure you have npm or yarn installed to manage packages.
 
 ### Setup
 1. **Clone the repository**:  
