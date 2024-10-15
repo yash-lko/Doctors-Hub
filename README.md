@@ -55,10 +55,10 @@ The project leverages **React Bootstrap** for a responsive layout and consistent
 
 ### Setup
 1. **Clone the repository**:  
-   `git clone https://github.com/your-username/doctor-management-app.git`
+   `git clone https://github.com/your-username/Doctors-Hub.git`
 
 2. **Navigate to the project directory**:  
-   `cd doctor-management-app`
+   `cd Doctors-Hub`
 
 3. **Install dependencies using npm**:  
    `npm install`
