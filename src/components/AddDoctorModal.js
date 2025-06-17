@@ -13,7 +13,7 @@ const AddDoctorModal = ({ show, handleClose }) => {
 
 
 
-  /*Validation Function */
+  /*Validation Functionn */
   const validateFields = () => {
     const errors = {};
     const namePattern = /^[A-Za-z\s]+$/;
