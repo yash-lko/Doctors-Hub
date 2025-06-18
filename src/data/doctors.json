@@ -79,5 +79,14 @@
     "rating": 4.9,
     "phone": "(214) 321-6547",
     "email": "lindamartinez@example.com"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Emily Gomez",
+    "specialty": "Child Specialist",
+    "location": "CA",
+    "rating": 4.5,
+    "phone": "(214) 221-6047",
+    "email": "emilygomez@example.com"
   }
 ]
