@@ -41,11 +41,9 @@ const App = () => {
   return (
     <DoctorProvider>
 
-      {/* Header */}
       <Header />
 
       <div className="container mt-4">
-        {/* Filters and Search */}
         <div className="row mb-1">
           <div className="col-md-4 ">
             <Filters type="speciality" onFilterChange={handleFilterChange} />
@@ -57,19 +55,14 @@ const App = () => {
             <SearchBar onSearch={handleSearch} />
           </div>
         </div>
-
-        {/* Doctor Collection */}
         <div className="row">
           <DoctorCollection filters={filters} onDoctorClick={handleDoctorClick} />
         </div>
       </div>
-
-      {/* Doctor Modal */}
       {selectedDoctor && (
         <DoctorModal show={showModal} handleClose={handleCloseModal} doctor={selectedDoctor} />
       )}
 
-      {/* Toast Notification */}
       <ToastContainer />
 
     </DoctorProvider>

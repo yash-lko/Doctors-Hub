@@ -10,10 +10,6 @@ const AddDoctorModal = ({ show, handleClose }) => {
   });
   const [error, setError] = useState({});
 
-
-
-
-  /*Validation Functionn */
   const validateFields = () => {
     const errors = {};
     const namePattern = /^[A-Za-z\s]+$/;
@@ -51,8 +47,6 @@ const AddDoctorModal = ({ show, handleClose }) => {
     return errors;
   };
 
-
-   /*OnChange input Function*/
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setDoctor((prev) => ({
@@ -65,8 +59,6 @@ const AddDoctorModal = ({ show, handleClose }) => {
     }));
   };
 
-
- /*AddDoctor Function */
   const handleAddDoctor = (e) => {
     e.preventDefault();
 
