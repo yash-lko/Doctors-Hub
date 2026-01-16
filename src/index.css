@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
@@ -7,7 +6,7 @@ body {
 }
 
 
-/* Header  */
+
 
 .header-container {
   background-color: white;
@@ -22,6 +21,7 @@ body {
 .header-icon {
   font-size: 3rem;
   color: #17a2b8;
+  cursor: pointer;
 }
 
 .header-title {
@@ -42,8 +42,6 @@ body {
   background-color: #138496;
 }
 
-
-/*Doctor Modal */
 .doctor-modal-header {
   background-color: #f7f7f7;
   border-bottom: none;
@@ -70,11 +68,11 @@ body {
 .doctor-email {
   font-size: 1rem;
 }
-.doctor-modal-body .text-dangers{
-  color:#E87D67 !important;
+
+.doctor-modal-body .text-dangers {
+  color: #E87D67 !important;
 }
 
-/* Doctor Card */
 .doctor-card {
   cursor: pointer;
   border-radius: 12px;
@@ -120,11 +118,6 @@ body {
 
 
 
-
-
-
-/* Add Doctor Modal   */
-
 .modal-header {
   background-color: rgb(247, 247, 247);
   border-bottom: none;
@@ -146,8 +139,6 @@ body {
 }
 
 
-
-/*Searchbar */
 .search-bar-wrapper {
   position: relative;
   margin-bottom: 1rem;
@@ -166,7 +157,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/*Filter */
 
 .filter-wrapper {
   position: relative;
@@ -188,15 +178,15 @@ body {
 
 
 .custom-toast {
-  font-size: 14px; 
-  padding: 10px 15px; 
-  border-radius: 8px; 
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 8px;
 }
 
 @media (max-width: 576px) {
   .custom-toast {
     font-size: 12px;
-    padding: 8px 12px; 
+    padding: 8px 12px;
   }
 }
 
@@ -212,8 +202,6 @@ body {
 
 
 
-/*Media Queries */
-
 @media (max-width: 768px) {
   .modal-body p {
     font-size: 1rem;
@@ -227,22 +215,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Pagination Styles */
 .custom-pagination .custom-pagination-item,
 .custom-pagination-prev,
 .custom-pagination-next {
