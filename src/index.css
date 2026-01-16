@@ -11,6 +11,7 @@ body {
 .header-container {
   background-color: white;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .header-content {
@@ -21,7 +22,7 @@ body {
 .header-icon {
   font-size: 3rem;
   color: #17a2b8;
-  cursor: pointer;
+ 
 }
 
 .header-title {
