@@ -1,6 +1,5 @@
 import React from 'react';
 
- /*Search Function */
 const SearchBar = ({ onSearch }) => {
   const handleChange = (e) => {
     onSearch('doctorName', e.target.value);
