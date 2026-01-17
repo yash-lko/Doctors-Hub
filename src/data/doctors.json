@@ -91,11 +91,29 @@
   },
   {
     "id": 11,
-    "name": "Dr. Eric Smith",
+    "name": "Erik Johnson",
     "specialty": "Pediatrics",
     "location": "LA",
     "rating": 4,
     "phone": "(214) 321-4047",
-    "email": "ericsmith00321@gmail.com"
+    "email": "erik@gmail.com"
+  },
+  {
+    "id": 12,
+    "name": "Emily ",
+    "specialty": "Child Specialist",
+    "location": "BR",
+    "rating": 4.5,
+    "phone": "(214) 221-6047",
+    "email": "emily@yahoo.com"
+  },
+  {
+    "id": 13,
+    "name": "Ryan Miller",
+    "specialty": "Pediatrics",
+    "location": "LA",
+    "rating": 4,
+    "phone": "(214) 32g1-4047",
+    "email": "ryan@gmail.com"
   }
 ]
