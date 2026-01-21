@@ -9,8 +9,6 @@ const DoctorCollection = ({ filters, onDoctorClick }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [doctorsPerPage] = useState(8);
 
-
- /*Filter Doctors */
   const filteredDoctors = doctors?.filter((doctor) => {
     return (
       (filters.speciality ? doctor.specialty === filters.speciality : true) &&
