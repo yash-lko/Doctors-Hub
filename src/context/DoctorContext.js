@@ -8,8 +8,6 @@ export const DoctorProvider = ({ children }) => {
   const [doctors, setDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log(doctors, "Doctors list")
-
   useEffect(() => {
     const fetchDoctors = () => {
       try {
