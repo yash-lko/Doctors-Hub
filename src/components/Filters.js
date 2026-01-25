@@ -6,9 +6,6 @@ const Filters = ({ type, onFilterChange }) => {
   const { doctors } = useContext(DoctorContext); 
   const [loading, setLoading] = useState(true); 
   const [options, setOptions] = useState([]); 
-
-
-   /*Accessing Context for Specialty & Location */
   useEffect(() => {
     const timer = setTimeout(() => {
       const specialties = Array.from(new Set(doctors.map(doctor => doctor.specialty)));
