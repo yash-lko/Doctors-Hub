@@ -124,5 +124,14 @@
     "rating": 4.8,
     "phone": "(214) 32441-4047",
     "email": "yash@gmail.com"
+  },
+  {
+    "id": 15,
+    "name": "Yash Smith",
+    "specialty": "Scientist",
+    "location": "Los Angeles, CA",
+    "rating": 4,
+    "phone": "(214) 54441-4047",
+    "email": "y_smith@gmail.com"
   }
 ]
